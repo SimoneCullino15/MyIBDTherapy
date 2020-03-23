@@ -34,7 +34,7 @@ public class NewFarmaco extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int id) {
                 String nome = ((EditText)findViewById(R.id.txtNome)).getText().toString();
                 String bugiardino = ((EditText)findViewById(R.id.txtBugiardino)).getText().toString();
-                inserisciFarmaco(nome, bugiardino, "pillole");
+                inserisciFarmaco(nome, bugiardino, "uno");
             }
         });
         alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
@@ -56,7 +56,7 @@ public class NewFarmaco extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int id) {
                 String nome = ((EditText)findViewById(R.id.txtNome)).getText().toString();
                 String bugiardino = ((EditText)findViewById(R.id.txtBugiardino)).getText().toString();
-                inserisciFarmaco(nome, bugiardino, "siringa");
+                inserisciFarmaco(nome, bugiardino, "due");
             }
         });
         alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
@@ -78,7 +78,7 @@ public class NewFarmaco extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int id) {
                 String nome = ((EditText)findViewById(R.id.txtNome)).getText().toString();
                 String bugiardino = ((EditText)findViewById(R.id.txtBugiardino)).getText().toString();
-                inserisciFarmaco(nome, bugiardino, "bustina");
+                inserisciFarmaco(nome, bugiardino, "cinque");
             }
         });
         alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
@@ -100,7 +100,7 @@ public class NewFarmaco extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int id) {
                 String nome = ((EditText)findViewById(R.id.txtNome)).getText().toString();
                 String bugiardino = ((EditText)findViewById(R.id.txtBugiardino)).getText().toString();
-                inserisciFarmaco(nome, bugiardino, "clisma");
+                inserisciFarmaco(nome, bugiardino, "tre");
             }
         });
         alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
@@ -122,7 +122,7 @@ public class NewFarmaco extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int id) {
                 String nome = ((EditText)findViewById(R.id.txtNome)).getText().toString();
                 String bugiardino = ((EditText)findViewById(R.id.txtBugiardino)).getText().toString();
-                inserisciFarmaco(nome, bugiardino, "flebo");
+                inserisciFarmaco(nome, bugiardino, "quattro");
             }
         });
         alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {

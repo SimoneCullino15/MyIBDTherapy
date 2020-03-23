@@ -1,6 +1,8 @@
 package com.developer.cullino.myibdtherapy;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
@@ -98,6 +100,10 @@ public class FarStoryAdapter extends RecyclerView.Adapter<FarStoryAdapter.ItemVi
             if(farStoryAdapterListener != null){
                 farStoryAdapterListener.ItemClicked(v,getAdapterPosition());
             }
+        }
+
+        public void btBugiardino_Click(View view) {
+                
         }
     }
 }
