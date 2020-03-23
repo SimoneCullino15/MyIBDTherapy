@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewFarmaco">
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nome farmaco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <EditText
+        android:id="@+id/txtBugiardino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Web bugiardino"
+        app:layout_constraintStart_toStartOf="@+id/lblNome"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/lblBugiardino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/txtBugiardino"
+        app:layout_constraintTop_toBottomOf="@+id/txtBugiardino" />
+
+    <ImageView
+        android:id="@+id/btImgSiringa"
+        android:layout_width="131dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="btInserisciSiringa_Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btImgPillole"
+        app:srcCompat="@drawable/siringa" />
+
+    <ImageView
+        android:id="@+id/btImgPillole"
+        android:layout_width="131dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:onClick="btInserisciPillola_Click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBugiardino"
+        app:srcCompat="@drawable/pillole" />
+
+    <ImageView
+        android:id="@+id/btImgBustina"
+        android:layout_width="131dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:onClick="btInserisciBustina_Click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btImgPillole"
+        app:srcCompat="@drawable/bustina" />
+
+    <ImageView
+        android:id="@+id/btImgClisma"
+        android:layout_width="131dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="btInserisciClisma_Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btImgBustina"
+        app:srcCompat="@drawable/clisma" />
+
+    <ImageView
+        android:id="@+id/btImgFlebo"
+        android:layout_width="131dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="24dp"
+        android:onClick="btInserisciFlebo_Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btImgBustina"
+        app:srcCompat="@drawable/flebo" />
+
+</android.support.constraint.ConstraintLayout>
